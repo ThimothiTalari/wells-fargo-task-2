@@ -9,7 +9,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class client 
+public class Client 
 {
 	@Id
 	@GeneratedValue
@@ -33,13 +33,13 @@ public class client
 
 	
 	
-	public client() {
+	public Client() {
 		super();
 	}
 
 
 
-	public client(Long clientId, String firstName, String lastName, String phone, String email, Advisor advisor) {
+	public Client(Long clientId, String firstName, String lastName, String phone, String email, Advisor advisor) {
 		super();
 		this.clientId = clientId;
 		this.firstName = firstName;
